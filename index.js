@@ -8,7 +8,7 @@
 /* System */
 global.Discord        = require('discord.js');
 global.bot            = new Discord.Client();
-require('http').createServer().listen(3000); 
+require('http').createServer().listen(3001); 
 
 
 /* Dependencies */
