@@ -154,7 +154,7 @@ channel1.send(embed);
 }
 	
 	if(message.content.startsWith("a!ping")){
-		if(message.member.haaPermission("MANAGE_MESSAGES"){
+		if(message.member.hasPermission("MANAGE_MESSAGES"){
   message.channel.send(`Ping is ${Math.floor(message.createdAt - message.createdAt)}ms`)
 }
 }
