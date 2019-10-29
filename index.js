@@ -128,7 +128,7 @@ function handleDisconnect() {
 
 bot.on('message', message => {
 	
-if(message.content.startsWith("u!info")) {
+if(message.content.startsWith("a!info")) {
 
 const embed = new Discord.RichEmbed()
 
@@ -151,6 +151,10 @@ let channel1 = message.channel
 channel1.send(embed);
 
 
+}
+	
+	if(message.content.startsWith("a!ping")){
+  message.channel.send(`Ping is ${Math.floor(message.createdAt - message.createdAt)}ms`)
 }
 });
 
