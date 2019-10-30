@@ -154,11 +154,10 @@ channel1.send(embed);
 }
 	
 
-if(message.content.startsWith("!ping")) {
-	if(message.member.hasPermission("MANAGE_MESSAGES")){
-            message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");        
-    }
-}
+if(message.content.startsWith("a!ping")){ 
+  if(message.member.hasPermission("MANAGE_MESSAGES")){ 
+    message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");  
+  }
 }
 });
 
