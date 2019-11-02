@@ -161,7 +161,9 @@ if(message.content.startsWith("a!ping")){
        m.edit(`Bot Latency is : \`${ping}\` ms `)
      })
 
-  }
+  } else { 
+	  message.channel.send("You do not have permission to use this.")
+}
 }
 });
 
