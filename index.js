@@ -160,6 +160,9 @@ if(message.content.startsWith("a!ping")){
        let ping = m.createdTimestamp - message.createdTimestamp
        m.edit(`Bot Latency is : \`${ping}\` ms `)
      })
+
+  }
+}
 });
 
 
