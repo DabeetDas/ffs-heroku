@@ -156,7 +156,7 @@ channel1.send(embed);
 
 if(message.content.startsWith("a!ping")){ 
   if(message.member.hasPermission("MANAGE_MESSAGES")){ 
-    message.channel.send(client.ping + " ms");  
+    message.channel.send(bot.ping + " ms");  
   }
 }
 });
